@@ -1,0 +1,47 @@
+inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited ImageControl1: TImageControl
+    Position.X = -24.000000000000000000
+    Position.Y = -16.000000000000000000
+  end
+  inherited btnSoma: TButton
+    Position.X = 176.000000000000000000
+    Position.Y = 312.000000000000000000
+  end
+  inherited btnSub: TButton
+    Position.X = 240.000000000000000000
+    Position.Y = 312.000000000000000000
+  end
+  inherited btnMulti: TButton
+    Position.X = 240.000000000000000000
+    Position.Y = 384.000000000000000000
+    OnClick = btnMultiClick
+  end
+  inherited btnDiv: TButton
+    Position.X = 168.000000000000000000
+    Position.Y = 384.000000000000000000
+  end
+  inherited btnLimpar: TButton
+    Position.X = 40.000000000000000000
+    Position.Y = 496.000000000000000000
+    OnClick = btnLimparClick
+  end
+  inherited Button2: TButton
+    Position.X = 360.000000000000000000
+    Position.Y = 488.000000000000000000
+  end
+  inherited txtN1: TEdit
+    Position.X = 232.000000000000000000
+    Position.Y = 136.000000000000000000
+  end
+  inherited txtN2: TEdit
+    Position.X = 232.000000000000000000
+    Position.Y = 192.000000000000000000
+  end
+  inherited lblResult: TLabel
+    Position.X = 200.000000000000000000
+    Position.Y = 256.000000000000000000
+  end
+end
