@@ -1,0 +1,341 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'frmPrincipal'
+  ClientHeight = 480
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object tbcPrincipal: TTabControl
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 1
+    TabOrder = 0
+    TabPosition = Dots
+    Sizes = (
+      320s
+      480s
+      320s
+      480s)
+    object tabVinhos: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'VINHOS'
+      ExplicitSize.cx = 160.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object ListView1: TListView
+        ItemAppearanceClassName = 'TImageListItemBottomDetailAppearance'
+        ItemEditAppearanceClassName = 'TImageListItemBottomDetailShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        ItemIndex = 0
+        Align = Client
+        Size.Width = 320.000000000000000000
+        Size.Height = 432.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ItemAppearanceObjects.ItemObjects.Image.Visible = False
+        OnItemClick = ListView1ItemClick
+        OnDeleteItem = ListView1DeleteItem
+        DeleteButtonText = 'Apagar'
+      end
+      object ToolBar1: TToolBar
+        Size.Width = 320.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Label1: TLabel
+          Align = Contents
+          Size.Width = 320.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.HorzAlign = Center
+          Text = 'Vinhos'
+          TabOrder = 0
+        end
+        object Button1: TButton
+          Align = Right
+          Margins.Right = 10.000000000000000000
+          Position.X = 262.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'addtoolbutton'
+          TabOrder = 1
+          Text = 'Button1'
+          OnClick = Button1Click
+        end
+      end
+    end
+    object tabDetalhes: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'DETALHES'
+      ExplicitSize.cx = 160.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object ToolBar2: TToolBar
+        Size.Width = 320.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Label2: TLabel
+          Align = Contents
+          Size.Width = 320.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.HorzAlign = Center
+          Text = 'Detalhes'
+          TabOrder = 0
+        end
+        object Button2: TButton
+          Align = Left
+          Margins.Left = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'replytoolbutton'
+          TabOrder = 1
+          Text = 'Button2'
+          OnClick = Button2Click
+        end
+      end
+      object ListBox1: TListBox
+        Align = Client
+        Size.Width = 320.000000000000000000
+        Size.Height = 432.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 320.000000000000000000
+        Viewport.Height = 432.000000000000000000
+        object ListBoxItem1: TListBoxItem
+          TabOrder = 0
+          Text = 'Marca'
+          object Edit1: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Right
+            TabOrder = 0
+            Text = 'Santa Helena'
+            Position.X = 145.000000000000000000
+            Position.Y = 6.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 165.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object ListBoxItem2: TListBoxItem
+          Position.Y = 44.000000000000000000
+          TabOrder = 1
+          Text = 'Tipo'
+          object Edit2: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Right
+            TabOrder = 0
+            Text = 'Tinto'
+            Position.X = 145.000000000000000000
+            Position.Y = 6.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 165.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object ListBoxItem3: TListBoxItem
+          Position.Y = 88.000000000000000000
+          TabOrder = 2
+          Text = 'Uvas'
+          object Edit3: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Right
+            TabOrder = 0
+            Text = 'Carbenet Sauvignon'
+            Position.X = 145.000000000000000000
+            Position.Y = 6.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 165.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object ListBoxItem4: TListBoxItem
+          Position.Y = 132.000000000000000000
+          TabOrder = 3
+          Text = 'Ano'
+          object Edit4: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Right
+            TabOrder = 0
+            Text = '2011'
+            Position.X = 145.000000000000000000
+            Position.Y = 6.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 165.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object ListBoxItem5: TListBoxItem
+          Position.Y = 176.000000000000000000
+          TabOrder = 4
+          Text = 'Origem'
+          object Edit5: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Right
+            TabOrder = 0
+            Text = 'Chile'
+            Position.X = 145.000000000000000000
+            Position.Y = 6.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 165.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object ListBoxItem6: TListBoxItem
+          Position.Y = 220.000000000000000000
+          TabOrder = 5
+          Text = 'Classifica'#231#227'o'
+          object ComboBox1: TComboBox
+            Align = Right
+            Items.Strings = (
+              '5'
+              '4'
+              '3'
+              '2'
+              '1')
+            ItemIndex = 0
+            Margins.Right = 10.000000000000000000
+            Position.X = 145.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 165.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+          end
+        end
+        object ListBoxItem7: TListBoxItem
+          Position.Y = 264.000000000000000000
+          TabOrder = 6
+        end
+        object ListBoxItem8: TListBoxItem
+          Position.Y = 308.000000000000000000
+          TabOrder = 7
+          object btnSalvar: TButton
+            Position.X = 24.000000000000000000
+            Position.Y = 8.000000000000000000
+            StyleLookup = 'listitembutton'
+            TabOrder = 0
+            Text = 'Salvar'
+            OnClick = btnSalvarClick
+          end
+          object btnExcluir: TButton
+            Position.X = 232.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'trashtoolbuttonbordered'
+            TabOrder = 1
+            OnClick = btnExcluirClick
+          end
+        end
+      end
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = DM.fdqVinhos
+    ScopeMappings = <>
+    Left = 264
+    Top = 112
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 76
+    Top = 165
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'Marca'
+      Control = ListView1
+      FillExpressions = <
+        item
+          SourceMemberName = 'Uvas'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'Marca'
+      Control = Edit1
+      Track = False
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'Tipo'
+      Control = Edit2
+      Track = False
+    end
+    object LinkControlToField3: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'Uvas'
+      Control = Edit3
+      Track = False
+    end
+    object LinkControlToField4: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'Ano'
+      Control = Edit4
+      Track = False
+    end
+    object LinkControlToField5: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'Origem'
+      Control = Edit5
+      Track = False
+    end
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'Classificacao'
+      Control = ComboBox1
+      Track = True
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end
