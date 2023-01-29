@@ -1,0 +1,77 @@
+unit Unit1;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Controls.Presentation, FMX.Edit;
+
+type
+  TForm1 = class(TForm)
+    txtPeso: TEdit;
+    txtAltura: TEdit;
+    btnOK: TButton;
+    imagem: TImageControl;
+    lblResult: TLabel;
+    btnLimpar: TButton;
+    btnSair: TButton;
+    procedure btnOKClick(Sender: TObject);
+    procedure btnLimparClick(Sender: TObject);
+    procedure btnSairClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  altura, peso, imc: double;
+implementation
+
+{$R *.fmx}
+{$R *.LgXhdpiPh.fmx ANDROID}
+
+procedure TForm1.btnLimparClick(Sender: TObject);
+begin
+  imc := 0;
+  altura := 0;
+  peso := 0;
+  txtPeso.Text := '';
+  txtAltura.Text := '';
+  lblResult.Text :='';
+
+end;
+
+procedure TForm1.btnOKClick(Sender: TObject);
+begin
+  altura := strtofloat(txtAltura.Text);
+  peso := strtofloat(txtPeso.Text);
+
+  imc :=peso/(altura*altura);
+
+
+
+
+  if (imc < 18.5) then
+     lblResult.Text := 'IMC = ' + floattostr(imc) + #13 + ' Abaixo do Peso'
+  else if (imc >=18.5) and (imc<=24.9) then
+     lblResult.Text := 'IMC = ' + floattostr(imc) +  #13 +  ' Peso Normal '
+  else if (imc >=25) and (imc<=29.9) then
+     lblResult.Text := 'IMC = ' + floattostr(imc) + #13 +  ' Sobrepeso '
+  else if (imc >=30) and (imc<=34.9) then
+     lblResult.Text := 'IMC = ' + floattostr(imc) + #13 +  ' Obsidade Grau I '
+  else if (imc >=35) and (imc<=39.9) then
+      lblResult.Text := 'IMC = ' + floattostr(imc) + #13 +  ' Obsidade Grau II '
+  else if (imc >=40) then
+       lblResult.Text := 'IMC = ' + floattostr(imc) + #13 +  ' Obsidade Grau III '
+end;
+
+
+procedure TForm1.btnSairClick(Sender: TObject);
+begin
+  Application.Terminate;
+end;
+
+end.

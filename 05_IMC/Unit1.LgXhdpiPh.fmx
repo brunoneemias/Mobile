@@ -1,0 +1,10 @@
+inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited imagem: TImageControl
+    inherited lblResult: TLabel
+      TextSettings.Font.StyleExt = {04040000000200000004000000}
+    end
+  end
+end
