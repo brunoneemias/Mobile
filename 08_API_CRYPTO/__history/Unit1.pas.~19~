@@ -1,0 +1,168 @@
+unit Unit1;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, REST.Types,
+  REST.Client, Data.Bind.Components, Data.Bind.ObjectScope, FMX.StdCtrls,
+  FMX.Layouts, FMX.Edit, FMX.Controls.Presentation, FMX.TabControl, System.JSON;
+
+type
+  TForm1 = class(TForm)
+    TabControl1: TTabControl;
+    TabItem1: TTabItem;
+    TabItem2: TTabItem;
+    TabItem3: TTabItem;
+    Label1: TLabel;
+    txtValorReal: TEdit;
+    Label2: TLabel;
+    GridPanelLayout1: TGridPanelLayout;
+    txtValorBitCoin: TEdit;
+    btnAtualize: TButton;
+    btnCalcular: TButton;
+    btnLimpar: TButton;
+    Label3: TLabel;
+    lblQtdBitCoin: TLabel;
+    Label4: TLabel;
+    txtValorBrl1: TEdit;
+    Label5: TLabel;
+    GridPanelLayout2: TGridPanelLayout;
+    txtValorLTC: TEdit;
+    btnAtualizaLTC: TButton;
+    btnCalcularLTC: TButton;
+    btnLimparLTC: TButton;
+    Label6: TLabel;
+    lblQtdLTC: TLabel;
+    Label8: TLabel;
+    txtValorBRL2: TEdit;
+    Label9: TLabel;
+    GridPanelLayout3: TGridPanelLayout;
+    txtValorETH: TEdit;
+    Button4: TButton;
+    btnCalcularETH: TButton;
+    btnLimparETH: TButton;
+    Label10: TLabel;
+    lblQtdETH: TLabel;
+    RESTClient1: TRESTClient;
+    RESTRequest1: TRESTRequest;
+    RESTResponse1: TRESTResponse;
+    RESTClient2: TRESTClient;
+    RESTRequest2: TRESTRequest;
+    RESTResponse2: TRESTResponse;
+    RESTClient3: TRESTClient;
+    RESTRequest3: TRESTRequest;
+    RESTResponse3: TRESTResponse;
+    procedure btnAtualizeClick(Sender: TObject);
+    procedure btnCalcularClick(Sender: TObject);
+    procedure btnLimparClick(Sender: TObject);
+    procedure btnAtualizaLTCClick(Sender: TObject);
+    procedure btnCalcularLTCClick(Sender: TObject);
+    procedure btnLimparLTCClick(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure btnCalcularETHClick(Sender: TObject);
+    procedure btnLimparETHClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  valor_reais, valor_btc, qtde_btc: real;
+  valor_brl1, valor_ltc, qtde_ltc: real;
+  valor_brl2, valor_eth, qtde_eth: real;
+implementation
+
+{$R *.fmx}
+
+procedure TForm1.btnAtualizeClick(Sender: TObject);
+var
+jValor:TJSONValue;
+begin
+RESTRequest1.Execute;
+jValor := RESTResponse1.JSONValue;
+
+valor_btc := strtofloat(
+              stringreplace (
+              copy(jValor.ToString, Pos('"last":"',jValor.ToString)+8,14),
+    ',','.',[rfReplaceAll, rfIgnoreCase]));
+
+  txtValorBitCoin.Text := FormatFloat('#0.00',valor_btc);
+end;
+
+procedure TForm1.btnCalcularClick(Sender: TObject);
+begin
+ valor_reais := StrToFloat(txtValorReal.Text);
+ qtde_btc := valor_reais / valor_btc;
+ lblQtdBitCoin.Text := FormatFloat('#0.00000000',qtde_btc);
+
+end;
+
+procedure TForm1.btnCalcularETHClick(Sender: TObject);
+begin
+  valor_brl2 := StrToFloat(txtValorBRL2.Text);
+  qtde_eth := valor_brl2 / valor_eth;
+  lblQtdETH.Text :=  FormatFloat('#0.00000000',qtde_eth);
+end;
+
+procedure TForm1.btnCalcularLTCClick(Sender: TObject);
+begin
+  valor_brl1 := StrToFloat(txtValorBrl1.Text);
+  qtde_ltc := valor_brl1 / valor_ltc;
+  lblQtdLTC.Text :=   FormatFloat('#0.00000000',qtde_ltc);
+end;
+
+procedure TForm1.btnLimparClick(Sender: TObject);
+begin
+  txtValorReal.Text := '';
+  txtValorBitCoin.Text := '';
+  lblQtdBitCoin.Text := '0.00000000';
+end;
+
+procedure TForm1.btnLimparETHClick(Sender: TObject);
+begin
+  txtValorBRL2.Text := '';
+  txtValorETH.Text := '';
+  lblQtdETH.Text :=   '0.00000000';
+end;
+
+procedure TForm1.btnLimparLTCClick(Sender: TObject);
+begin
+  txtValorLTC.Text := '';
+  txtValorBrl1.Text := '';
+  lblQtdLTC.Text := '0.00000000';
+end;
+
+procedure TForm1.Button4Click(Sender: TObject);
+var
+jValor3:TJSONValue;
+begin
+       RESTRequest3.Execute;
+jValor3 := RESTResponse2.JSONValue;
+
+valor_eth := strtofloat(
+              stringreplace (
+              copy(jValor3.ToString, Pos('"last":"',jValor3.ToString)+8,14),
+    ',','.',[rfReplaceAll, rfIgnoreCase]));
+
+  txtValorETH.Text := FormatFloat('#0.00',valor_eth);
+end;
+
+procedure TForm1.btnAtualizaLTCClick(Sender: TObject);
+var
+jValor2:TJSONValue;
+begin
+   RESTRequest2.Execute;
+jValor2 := RESTResponse2.JSONValue;
+
+valor_ltc := strtofloat(
+              stringreplace (
+              copy(jValor2.ToString, Pos('"last":"',jValor2.ToString)+8,13),
+    ',','.',[rfReplaceAll, rfIgnoreCase]));
+
+  txtValorLTC.Text := FormatFloat('#0.00',valor_ltc);
+end;
+
+end.

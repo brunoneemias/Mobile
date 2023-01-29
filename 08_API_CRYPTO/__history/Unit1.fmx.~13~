@@ -1,0 +1,547 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 320
+  Fill.Color = xFFDCFBA3
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 1
+    TabOrder = 0
+    TabPosition = PlatformDefault
+    Sizes = (
+      320s
+      431s
+      320s
+      431s
+      320s
+      431s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 106.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'BitCoin'
+      ExplicitSize.cx = 106.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object Label1: TLabel
+        Align = Top
+        Size.Width = 320.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'Valor em BRL:'
+        TabOrder = 3
+      end
+      object txtValorReal: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 4
+        TextSettings.HorzAlign = Center
+        Position.X = 30.000000000000000000
+        Position.Y = 50.000000000000000000
+        Margins.Left = 30.000000000000000000
+        Margins.Right = 30.000000000000000000
+        Margins.Bottom = 20.000000000000000000
+        Size.Width = 260.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Label2: TLabel
+        Align = Top
+        Position.Y = 102.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'Valor do BTC'
+        TabOrder = 2
+      end
+      object GridPanelLayout1: TGridPanelLayout
+        Align = Top
+        Margins.Left = 20.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 152.000000000000000000
+        Size.Width = 280.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        ColumnCollection = <
+          item
+            Value = 83.207727132282810000
+          end
+          item
+            Value = 16.792272867717190000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = txtValorBitCoin
+            Row = 0
+          end
+          item
+            Column = 1
+            Control = btnAtualize
+            Row = 0
+          end>
+        RowCollection = <
+          item
+            Value = 100.000000000000000000
+          end
+          item
+            SizeStyle = Auto
+          end>
+        object txtValorBitCoin: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Center
+          TabOrder = 0
+          TextSettings.HorzAlign = Center
+          Size.Width = 232.981628417968800000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object btnAtualize: TButton
+          Align = Center
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'refreshtoolbutton'
+          TabOrder = 1
+          Text = 'btnAtualize'
+          OnClick = btnAtualizeClick
+        end
+      end
+      object btnCalcular: TButton
+        Align = Top
+        StyledSettings = [Size]
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 222.000000000000000000
+        Size.Width = 280.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        Text = 'Calcular'
+        TextSettings.Font.Family = 'Copperplate Gothic'
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claAliceblue
+        TintColor = claDarkgreen
+        OnClick = btnCalcularClick
+      end
+      object btnLimpar: TButton
+        Align = Top
+        StyledSettings = [Size]
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 271.000000000000000000
+        Size.Width = 280.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        Text = 'Limpar'
+        TextSettings.Font.Family = 'Copperplate Gothic'
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claAliceblue
+        TintColor = claDarkmagenta
+        OnClick = btnLimparClick
+      end
+      object Label3: TLabel
+        Align = Top
+        Position.Y = 315.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'Quantidade BTC'
+        TabOrder = 1
+      end
+      object lblQtdBitCoin: TLabel
+        Align = Top
+        Position.Y = 365.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = '0.00000000'
+        TabOrder = 0
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 106.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'LITECOIN'
+      ExplicitSize.cx = 106.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object Label4: TLabel
+        Align = Top
+        Size.Width = 320.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'Valor em BRL:'
+        TabOrder = 3
+      end
+      object txtValorBrl1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 4
+        TextSettings.HorzAlign = Center
+        Position.X = 30.000000000000000000
+        Position.Y = 50.000000000000000000
+        Margins.Left = 30.000000000000000000
+        Margins.Right = 30.000000000000000000
+        Margins.Bottom = 20.000000000000000000
+        Size.Width = 260.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Label5: TLabel
+        Align = Top
+        Position.Y = 102.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'Valor do LTC'
+        TabOrder = 2
+      end
+      object GridPanelLayout2: TGridPanelLayout
+        Align = Top
+        Margins.Left = 20.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 152.000000000000000000
+        Size.Width = 280.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        ColumnCollection = <
+          item
+            Value = 83.207727132282810000
+          end
+          item
+            Value = 16.792272867717190000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = txtValorLTC
+            Row = 0
+          end
+          item
+            Column = 1
+            Control = btnAtualizaLTC
+            Row = 0
+          end>
+        RowCollection = <
+          item
+            Value = 100.000000000000000000
+          end
+          item
+            SizeStyle = Auto
+          end>
+        object txtValorLTC: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Center
+          TabOrder = 0
+          TextSettings.HorzAlign = Center
+          Size.Width = 232.981628417968800000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object btnAtualizaLTC: TButton
+          Align = Center
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'refreshtoolbutton'
+          TabOrder = 1
+          Text = 'btnAtualize'
+          OnClick = btnAtualizaLTCClick
+        end
+      end
+      object btnCalcularLTC: TButton
+        Align = Top
+        StyledSettings = [Size]
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 222.000000000000000000
+        Size.Width = 280.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        Text = 'Calcular'
+        TextSettings.Font.Family = 'Copperplate Gothic'
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claAliceblue
+        TintColor = claDarkgreen
+        OnClick = btnCalcularLTCClick
+      end
+      object btnLimparLTC: TButton
+        Align = Top
+        StyledSettings = [Size]
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 271.000000000000000000
+        Size.Width = 280.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        Text = 'Limpar'
+        TextSettings.Font.Family = 'Copperplate Gothic'
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claAliceblue
+        TintColor = claDarkmagenta
+        OnClick = btnLimparLTCClick
+      end
+      object Label6: TLabel
+        Align = Top
+        Position.Y = 315.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'Quantidade LTC'
+        TabOrder = 1
+      end
+      object lblQtdLTC: TLabel
+        Align = Top
+        Position.Y = 365.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = '0.00000000'
+        TabOrder = 0
+      end
+    end
+    object TabItem3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 108.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'ETHERIUM'
+      ExplicitSize.cx = 108.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object Label8: TLabel
+        Align = Top
+        Size.Width = 320.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'Valor em BRL:'
+        TabOrder = 3
+      end
+      object Edit3: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 4
+        Position.X = 30.000000000000000000
+        Position.Y = 50.000000000000000000
+        Margins.Left = 30.000000000000000000
+        Margins.Right = 30.000000000000000000
+        Margins.Bottom = 20.000000000000000000
+        Size.Width = 260.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Label9: TLabel
+        Align = Top
+        Position.Y = 102.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'Valor do ETH'
+        TabOrder = 2
+      end
+      object GridPanelLayout3: TGridPanelLayout
+        Align = Top
+        Margins.Left = 20.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 152.000000000000000000
+        Size.Width = 280.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        ColumnCollection = <
+          item
+            Value = 83.207727132282810000
+          end
+          item
+            Value = 16.792272867717190000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = txtValorETH
+            Row = 0
+          end
+          item
+            Column = 1
+            Control = Button4
+            Row = 0
+          end>
+        RowCollection = <
+          item
+            Value = 100.000000000000000000
+          end
+          item
+            SizeStyle = Auto
+          end>
+        object txtValorETH: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Center
+          TabOrder = 0
+          Size.Width = 232.981628417968800000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Button4: TButton
+          Align = Center
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'refreshtoolbutton'
+          TabOrder = 1
+          Text = 'btnAtualize'
+        end
+      end
+      object Button5: TButton
+        Align = Top
+        StyledSettings = [Size]
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 222.000000000000000000
+        Size.Width = 280.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        Text = 'Calcular'
+        TextSettings.Font.Family = 'Copperplate Gothic'
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claAliceblue
+        TintColor = claDarkgreen
+      end
+      object Button6: TButton
+        Align = Top
+        StyledSettings = [Size]
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 271.000000000000000000
+        Size.Width = 280.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        Text = 'Limpar'
+        TextSettings.Font.Family = 'Copperplate Gothic'
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TextSettings.FontColor = claAliceblue
+        TintColor = claDarkmagenta
+      end
+      object Label10: TLabel
+        Align = Top
+        Position.Y = 315.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = 'Quantidade ETH'
+        TabOrder = 1
+      end
+      object Label11: TLabel
+        Align = Top
+        Position.Y = 365.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        Text = '0.00000000'
+        TabOrder = 0
+      end
+    end
+  end
+  object RESTClient1: TRESTClient
+    BaseURL = 'https://www.mercadobitcoin.net/api/BTC/ticker'
+    Params = <>
+    Left = 16
+    Top = 56
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Params = <>
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 96
+    Top = 56
+  end
+  object RESTResponse1: TRESTResponse
+    Left = 184
+    Top = 56
+  end
+  object RESTClient2: TRESTClient
+    BaseURL = 'https://www.mercadobitcoin.net/api/LTC/ticker'
+    Params = <>
+    Left = 16
+    Top = 120
+  end
+  object RESTRequest2: TRESTRequest
+    Client = RESTClient2
+    Params = <>
+    Response = RESTResponse2
+    SynchronizedEvents = False
+    Left = 96
+    Top = 120
+  end
+  object RESTResponse2: TRESTResponse
+    Left = 184
+    Top = 120
+  end
+end
