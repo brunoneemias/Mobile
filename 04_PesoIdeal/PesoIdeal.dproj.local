@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/02/23 18:22:25.000.035,=B:\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/02/23 18:35:46.000.416,=B:\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/03/28 21:54:51.000.619,=B:\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/03/28 21:56:30.000.253,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\05\PesoIdeal\Unit1.pas=B:\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/03/28 21:56:30.000.253,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\05\PesoIdeal\Unit1.fmx=B:\Delphi\Unit1.fmx</Transaction>
+    <Transaction>2021/03/28 21:56:39.000.397,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\05\PesoIdeal\PesoIdeal.dproj=B:\Delphi\Project2.dproj</Transaction>
+    <Transaction>2021/03/29 08:36:19.664,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\05\Calculadora\Unit1.fmx=C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\05\PesoIdeal\Unit1.fmx</Transaction>
+    <Transaction>2021/03/29 08:36:19.664,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\05\Calculadora\Unit1.pas=C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\05\PesoIdeal\Unit1.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5" Android="" Android64=""/>
+	</ActiveMobileDevice>
+</BorlandProject>

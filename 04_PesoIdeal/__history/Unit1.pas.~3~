@@ -1,0 +1,99 @@
+unit Unit1;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Controls.Presentation, FMX.Edit;
+
+type
+  TForm1 = class(TForm)
+    ImageControl1: TImageControl;
+    txtN1: TEdit;
+    txtN2: TEdit;
+    btnSoma: TButton;
+    btnSub: TButton;
+    btnDiv: TButton;
+    btnMulti: TButton;
+    btnLimpar: TButton;
+    btnExit: TButton;
+    lblResult: TLabel;
+    procedure btnSomaClick(Sender: TObject);
+    procedure btnSubClick(Sender: TObject);
+    procedure btnMultiClick(Sender: TObject);
+    procedure btnLimparClick(Sender: TObject);
+    procedure btnExitClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  soma, sub, divi, mult, n1,n2 : double;
+
+implementation
+
+{$R *.fmx}
+
+procedure TForm1.btnExitClick(Sender: TObject);
+begin
+  Exit;
+end;
+
+procedure TForm1.btnLimparClick(Sender: TObject);
+begin
+  soma := 0;
+  sub := 0;
+  divi :=0;
+  mult:= 0;
+  n1:=0;
+  n2:=0;
+  lblResult.Text := '';
+  txtN1.Text :='';
+  txtN2.Text:= '';
+
+end;
+
+procedure TForm1.btnMultiClick(Sender: TObject);
+begin
+    n1 := strtofloat(txtN1.Text);
+    n2 := strtofloat(txtN2.Text);
+
+    mult := n1 * n2;
+    lblResult.Text := floattostr(mult);
+
+end;
+
+procedure TForm1.btnSomaClick(Sender: TObject);
+begin
+  n1 := strtofloat(txtN1.Text);
+  n2 := strtofloat(txtN2.Text);
+
+  soma := n1 + n2;
+
+  lblResult.Text := floattostr(soma);
+
+end;
+
+procedure TForm1.btnSubClick(Sender: TObject);
+begin
+     n1 := strtofloat(txtN1.Text);
+     n2 := strtofloat(txtN2.Text);
+
+    if (n1>n2) then
+      sub := n1 - n2;
+    if (n2>n1) then
+      sub := n2 - n1;
+
+      lblResult.Text := floattostr(sub);
+
+
+
+
+
+end;
+
+end.
