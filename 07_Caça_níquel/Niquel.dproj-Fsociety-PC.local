@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/02/23 18:22:25.000.035,=B:\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/02/23 18:35:46.000.416,=B:\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/03/29 19:04:32.000.847,=B:\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/04/06 21:14:41.000.235,=B:\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/04/06 21:45:02.000.939,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\12\Unit1.fmx=B:\Delphi\Unit1.fmx</Transaction>
+    <Transaction>2021/04/06 21:45:02.000.939,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\12\Unit1.pas=B:\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/04/06 21:45:05.000.966,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\12\Niquel.dproj=B:\Delphi\Project2.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5" Android="" Android64=""/>
+	</ActiveMobileDevice>
+</BorlandProject>
