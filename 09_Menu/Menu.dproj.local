@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/02/23 18:22:25.000.035,=B:\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/02/23 18:35:46.000.416,=B:\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/03/29 19:04:32.000.847,=B:\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/05/18 16:30:13.787,=B:\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/05/18 16:48:38.070,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\05 - May\10-05\Unit1.pas=B:\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/05/18 16:48:38.070,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\05 - May\10-05\Unit1.fmx=B:\Delphi\Unit1.fmx</Transaction>
+    <Transaction>2021/05/18 16:48:41.408,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\05 - May\10-05\Menu.dproj=B:\Delphi\Project2.dproj</Transaction>
+    <Transaction>2021/05/18 17:00:12.286,=C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\05 - May\10-05\Unit2.pas</Transaction>
+    <Transaction>2021/05/18 17:38:22.605,=C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\05 - May\10-05\Unit3.pas</Transaction>
+    <Transaction>2021/05/18 17:41:42.894,=C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\05 - May\10-05\Unit4.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5" Android="1ffb3536" Android64="1ffb3536"/>
+	</ActiveMobileDevice>
+</BorlandProject>

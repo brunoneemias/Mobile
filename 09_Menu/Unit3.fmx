@@ -1,0 +1,21 @@
+object Frame3: TFrame3
+  Size.Width = 320.000000000000000000
+  Size.Height = 440.000000000000000000
+  Size.PlatformDefault = False
+  object Label1: TLabel
+    Position.X = 72.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Usando Frame'
+    TabOrder = 0
+  end
+  object Rectangle1: TRectangle
+    Position.X = 72.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 129.000000000000000000
+    Size.PlatformDefault = False
+  end
+end
