@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/02/23 18:22:25.000.035,=B:\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/02/23 18:35:46.000.416,=B:\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/03/29 19:04:32.000.847,=B:\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/04/05 22:08:14.490,=B:\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/04/05 22:10:03.974,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\untPrincipal.pas=B:\Delphi\Unit1.pas</Transaction>
+    <Transaction>2021/04/05 22:10:03.974,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\untPrincipal.fmx=B:\Delphi\Unit1.fmx</Transaction>
+    <Transaction>2021/04/05 22:10:15.881,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\TOP5_ALBUNS.dproj=B:\Delphi\Project2.dproj</Transaction>
+    <Transaction>2021/04/05 22:27:17.357,=C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\Unit2.pas</Transaction>
+    <Transaction>2021/04/05 22:27:56.957,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\untAstroWorld.fmx=C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\Unit2.fmx</Transaction>
+    <Transaction>2021/04/05 22:27:56.957,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\untAstroWorld.pas=C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\Unit2.pas</Transaction>
+    <Transaction>2021/04/05 22:43:31.993,=C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\Unit3.pas</Transaction>
+    <Transaction>2021/04/05 22:44:04.850,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\untMaquinaDoTempo.pas=C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\Unit3.pas</Transaction>
+    <Transaction>2021/04/05 22:44:04.850,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\untMaquinaDoTempo.fmx=C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\Unit3.fmx</Transaction>
+    <Transaction>2021/04/05 22:53:47.903,=C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\Unit4.pas</Transaction>
+    <Transaction>2021/04/05 22:54:14.841,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\untPrévias.pas=C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\Unit4.pas</Transaction>
+    <Transaction>2021/04/05 22:54:14.841,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\untPrévias.fmx=C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\Unit4.fmx</Transaction>
+    <Transaction>2021/04/05 23:01:52.223,=C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\Unit5.pas</Transaction>
+    <Transaction>2021/04/05 23:02:32.147,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\untBobby.pas=C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\Unit5.pas</Transaction>
+    <Transaction>2021/04/05 23:02:32.147,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\untBobby.fmx=C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\Unit5.fmx</Transaction>
+    <Transaction>2021/04/05 23:08:18.243,=C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\Unit6.pas</Transaction>
+    <Transaction>2021/04/05 23:08:39.772,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\untToken.pas=C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\Unit6.pas</Transaction>
+    <Transaction>2021/04/05 23:08:39.772,C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\untToken.fmx=C:\Users\Fsociety\OneDrive\Documents\Courses\System development technician\Module 2\Programação Mobile\11\Top 5 - Albuns\Unit6.fmx</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5" Android="" Android64="1ffb3536"/>
+	</ActiveMobileDevice>
+</BorlandProject>

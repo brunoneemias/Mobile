@@ -1,0 +1,18 @@
+program TOP5_ALBUNS;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  untPrincipal in 'untPrincipal.pas' {Form1},
+  untAstroWorld in 'untAstroWorld.pas' {Form2},
+  untMaquinaDoTempo in 'untMaquinaDoTempo.pas' {Form3};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TForm3, Form3);
+  Application.Run;
+end.
